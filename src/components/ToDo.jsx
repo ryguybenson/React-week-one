@@ -4,7 +4,12 @@ import PropTypes from "prop-types";
 function ToDo(props){
   return (
       <div>
-        <h3>{props.tasks}</h3>
+        <h3 className="blue-text">{props.tasks}</h3>
+        <style jsx>{`
+          .blue-text {
+            color: blue;
+          }
+          `}</style>
         <form>
         <div className="form-check">
           <label>
