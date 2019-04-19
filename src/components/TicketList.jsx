@@ -3,24 +3,24 @@ import Ticket from "./Ticket";
 
 var masterTicketList = [
   {
-  pictures: 'pic',
-  name: 'shirt',
-    price: '30'
+  tasks: 'Take out the garbage',
+  check: 'checkbox',
+    edit: 'edit'
   },
   {
-  pictures: 'pic',
-  name: 'another shirt',
-    price: '40'
+  tasks: 'Mow the lawn',
+  check: 'checkbox',
+    edit: 'edit'
   },
   {
-  pictures: 'pic',
-  name: 'some shorts',
-    price: '90'
+  tasks: 'Run 2 miles',
+  check: 'checkbox',
+    edit: 'edit'
   },
   {
-  pictures: 'pic',
-  name: 'some shorts',
-    price: '90'
+  tasks: 'Go grocery shopping',
+  check: 'checkbox',
+    edit: 'edit'
   }
 ];
 
@@ -29,9 +29,9 @@ function TicketList(){
       <div>
         <hr/>
         {masterTicketList.map((ticket, index) =>
-          <Ticket pictures={ticket.pictures}
-            names={ticket.name}
-            prices={ticket.price}
+          <Ticket tasks={ticket.tasks}
+            check={ticket.check}
+            edit={ticket.edit}
             key={index}/>
         )}
       </div>
