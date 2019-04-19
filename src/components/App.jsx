@@ -9,8 +9,17 @@ function App(){
     <div>
       <Header/>
       <ToDoList/>
-      <Edit/>
-      <NewTask/>
+      <div className="EditAdd">
+        <Edit/>
+        <NewTask/>
+      </div>
+      <style jsx>{`
+        .EditAdd{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+        `}</style>
     </div>
   );
 }

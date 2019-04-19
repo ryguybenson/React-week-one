@@ -10,7 +10,7 @@ function ToDo(props){
             color: blue;
           }
           `}</style>
-        <form>
+        <form className="form">
         <div className="form-check">
           <label>
             <input
@@ -20,7 +20,7 @@ function ToDo(props){
               checked={true}
               className="form-check-input"
             />
-            Check when the task is completed
+            Check When Completed
           </label>
         </div>
 
@@ -31,6 +31,14 @@ function ToDo(props){
         </div>
 
       </form>
+      <style jsx>{`
+        .form {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          width:275px
+        }
+        `}</style>
         <hr/>
       </div>
   );
