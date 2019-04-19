@@ -1,7 +1,7 @@
 import React from "react";
-import Ticket from "./Ticket";
+import ToDo from "./ToDo";
 
-var masterTicketList = [
+var masterToDoList = [
   {
   tasks: 'Take out the garbage',
   check: 'checkbox',
@@ -24,18 +24,18 @@ var masterTicketList = [
   }
 ];
 
-function TicketList(){
+function ToDoList(){
   return (
       <div>
         <hr/>
-        {masterTicketList.map((ticket, index) =>
-          <Ticket tasks={ticket.tasks}
-            check={ticket.check}
-            edit={ticket.edit}
+        {masterToDoList.map((toDo, index) =>
+          <ToDo tasks={toDo.tasks}
+            check={toDo.check}
+            edit={toDo.edit}
             key={index}/>
         )}
       </div>
     );
 }
 
-export default TicketList;
+export default ToDoList;

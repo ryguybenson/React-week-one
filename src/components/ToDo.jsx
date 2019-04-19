@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Ticket(props){
+function ToDo(props){
   return (
       <div>
         <h3>{props.tasks} - {props.check} - {props.edit}</h3>
@@ -10,10 +10,10 @@ function Ticket(props){
   );
 }
 
-Ticket.propTypes = {
+ToDo.propTypes = {
   tasks: PropTypes.string.isRequired,
   check: PropTypes.string.isRequired,
   edit: PropTypes.string.isRequired
 };
 
-export default Ticket;
+export default ToDo;

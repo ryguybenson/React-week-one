@@ -3,9 +3,8 @@ import React from "react";
 function Header(){
   return (
     <div>
-      <h1>Left</h1>
-      <h1>Center</h1>
-      <h1>Right</h1>
+      <h1>Welcome Back!</h1>
+      <h1>Your To-Do List</h1>
     </div>
   );
 }

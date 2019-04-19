@@ -1,12 +1,14 @@
 import React from "react";
-import TicketList from "./TicketList";
+import ToDoList from "./ToDoList";
 import Header from "./Header";
+import Edit from "./Edit";
 
 function App(){
   return (
     <div>
       <Header/>
-      <TicketList/>
+      <ToDoList/>
+      <Edit/>
     </div>
   );
 }
