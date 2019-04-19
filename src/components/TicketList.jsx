@@ -3,19 +3,19 @@ import Ticket from "./Ticket";
 
 var masterTicketList = [
   {
-    names: 'Thato and Haley',
-    location: '3A',
-    issue: 'Firebase won\'t save record. Halp.'
+  pictures: 'pic',
+  name: 'shirt',
+    price: '30'
   },
   {
-    names: 'Sleater and Kinney',
-    location: '4B',
-    issue: 'Fox image not displaying on page, can only see duck?'
+  pictures: 'pic',
+  name: 'another shirt',
+    price: '40'
   },
   {
-    names: 'Imani & Jacob',
-    location: '9F',
-    issue: 'Donkey picture not displaying on hover in Zoology app. :('
+  pictures: 'pic',
+  name: 'some shorts',
+    price: '90'
   }
 ];
 
@@ -24,9 +24,9 @@ function TicketList(){
       <div>
         <hr/>
         {masterTicketList.map((ticket, index) =>
-          <Ticket names={ticket.names}
-            location={ticket.location}
-            issue={ticket.issue}
+          <Ticket pictures={ticket.pictures}
+            names={ticket.name}
+            prices={ticket.price}
             key={index}/>
         )}
       </div>
