@@ -6,7 +6,7 @@ function Edit(){
       <h1>Edit Task</h1>
       <form>
         <label>
-          Enter Task Description:
+          Edit Task Description:
           <input type="text" name="taskDescription" />
         </label>
       </form>

@@ -4,7 +4,28 @@ import PropTypes from "prop-types";
 function ToDo(props){
   return (
       <div>
-        <h3>{props.tasks} - {props.check} - {props.edit}</h3>
+        <h3>{props.tasks}</h3>
+        <form>
+        <div className="form-check">
+          <label>
+            <input
+              type="radio"
+              name="react-tips"
+              value="option1"
+              checked={true}
+              className="form-check-input"
+            />
+            Check when the task is completed
+          </label>
+        </div>
+
+        <div className="form-group">
+          <button className="btn btn-primary mt-2" type="submit">
+            Edit
+          </button>
+        </div>
+
+      </form>
         <hr/>
       </div>
   );
@@ -12,8 +33,6 @@ function ToDo(props){
 
 ToDo.propTypes = {
   tasks: PropTypes.string.isRequired,
-  check: PropTypes.string.isRequired,
-  edit: PropTypes.string.isRequired
 };
 
 export default ToDo;
