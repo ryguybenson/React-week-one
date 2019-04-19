@@ -7,7 +7,9 @@ function ToDo(props){
         <h3 className="blue-text">{props.tasks}</h3>
         <style jsx>{`
           .blue-text {
-            color: blue;
+            color: #228DFF;
+            font-family: Iceland;
+            padding-left: 10px;
           }
           `}</style>
         <form className="form">
@@ -39,7 +41,13 @@ function ToDo(props){
           width:275px
         }
         `}</style>
-        <hr/>
+        <hr className="hr"></hr>
+        <style jsx>{`
+          .hr {
+            width: 92vw;
+            color: black;
+          }
+          `}</style>
       </div>
   );
 }

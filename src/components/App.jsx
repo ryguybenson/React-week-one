@@ -7,17 +7,26 @@ import NewTask from "./NewTask";
 function App(){
   return (
     <div>
-      <Header/>
-      <ToDoList/>
-      <div className="EditAdd">
-        <Edit/>
-        <NewTask/>
+      <div className="gray">
+        <Header/>
+        <ToDoList/>
+        <div className="EditAdd">
+          <Edit/>
+          <NewTask/>
+        </div>
+        <style jsx>{`
+          .EditAdd{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+          }
+          `}</style>
       </div>
       <style jsx>{`
-        .EditAdd{
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
+        .gray {
+          background-color: lightgray;  
+          padding-bottom: 20px;
+          padding-top: 20px;
         }
         `}</style>
     </div>
