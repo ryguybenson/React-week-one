@@ -15,6 +15,10 @@ _This application is a to-do list built using angular._
 * _Run 'npm install' in your preferred terminal(node.js must be downloaded on the computer)._
 * _run 'npm run start' in your preferred terminal to launch the application in a web browser._
 
+## Differences between React and Angular
+
+_Overall, I like React much more than Angular. The components are much simpler to keep track of and the importing seems easier to me, althought that is probably just because I have a basic understanding now. However, I did like how Angular had its own styles page for each component. It's hard for me to keep track of all the CSS in React and it takes me way to long to implement it which I found slightly annoying. So far I'm liking React much more than Angular though._
+
 ## Known Bugs
 
 _The application won't compile._
