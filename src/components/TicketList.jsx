@@ -16,6 +16,11 @@ var masterTicketList = [
   pictures: 'pic',
   name: 'some shorts',
     price: '90'
+  },
+  {
+  pictures: 'pic',
+  name: 'some shorts',
+    price: '90'
   }
 ];
 
