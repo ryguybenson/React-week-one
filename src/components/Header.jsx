@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 
 function Header(){
+
+  var header = {
+    textAlign: "center"
+  }
+  
   return (
     <div>
-      <div className="header">
+      <div style={header}>
         <h1>Your To-Do List</h1>
-        <style jsx>{`
-          .header {
-            text-align: center;
-          }
-          `}</style>
       </div>
     </div>
   );

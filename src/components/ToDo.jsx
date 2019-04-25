@@ -1,18 +1,25 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function ToDo(props){
+
+  var blueText = {
+    color: "#228DFF",
+    paddingLeft: "10px"
+  }
+  var form = {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    width: "275px"
+  }
+  var hr = {
+    width: "92vw"
+  }
   return (
-      <div>
-        <h3 className="blue-text">{props.tasks}</h3>
-        <style jsx>{`
-          .blue-text {
-            color: #228DFF;
-            font-family: Iceland;
-            padding-left: 10px;
-          }
-          `}</style>
-        <form className="form">
+    <div>
+      <h3 style={blueText}>{props.tasks}</h3>
+      <form style={form}>
         <div className="form-check">
           <label>
             <input
@@ -33,22 +40,8 @@ function ToDo(props){
         </div>
 
       </form>
-      <style jsx>{`
-        .form {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          width:275px
-        }
-        `}</style>
-        <hr className="hr"></hr>
-        <style jsx>{`
-          .hr {
-            width: 92vw;
-            color: black;
-          }
-          `}</style>
-      </div>
+      <hr style={hr}></hr>
+    </div>
   );
 }
 
