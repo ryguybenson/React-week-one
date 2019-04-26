@@ -28,9 +28,15 @@ class Feed extends React.Component {
       bottom: '0',
       width: '100vw'
     };
+    var background = {
+      backgroundImage: 'url(`../../assets/images/background.jpg`)',
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed',
+      backgroundPosition: 'center'
+    }
     return (
       <div>
-        <div>
+        <div style={background}>
           <ItemList itemList={this.state.masterFeed} />
         </div>
         <div style={footer}>

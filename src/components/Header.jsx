@@ -4,7 +4,10 @@ function Header(){
 
   var header = {
     textAlign: 'center',
-    backgroundImage: 'linear-gradient(to bottom,#282828,#484848,#282828)',
+    backgroundImage: 'url(`../.././assets/images/background.jpg`)',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+    backgroundPosition: 'center',
     position: 'fixed',
     top: '0',
     height: '10vh',
