@@ -8,9 +8,6 @@ function Post(props) {
 
   function handleNewPost(event) {
     event.preventDefault();
-    console.log(_post.value);
-    console.log(props);
-    console.log('hello');
     props.onNewPostCreation({post: _post.value, id: v4()});
     _post.value = '';
     console.log(props.onNewPostCreation);

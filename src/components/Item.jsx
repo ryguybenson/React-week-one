@@ -28,19 +28,4 @@ Item.propTypes = {
   text: PropTypes.string.isRequired
 };
 
-export default Item;
-asdgsdgafsgdfgd
-sdfsdgdfg
-FIfsaDjXgIdfg
-
-fdg
-sdfsdgdfggfd
-gdfsgds
-fg
-dfsg
-// DEBUG: function* (fds
-function* (d) {
-
-}) {
-
-}
+export default Item
