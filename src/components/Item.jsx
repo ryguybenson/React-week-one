@@ -15,7 +15,6 @@ function Item(props) {
     fontSize: '1rem'
   };
 
-
   return (
     <div style={itemStyles}>
       <div style={contentStyle}>
@@ -28,4 +27,4 @@ Item.propTypes = {
   text: PropTypes.string.isRequired
 };
 
-export default Item
+export default Item;

@@ -8,7 +8,6 @@ function ItemList(props) {
   console.log(props.itemList);
   var itemListStyles = {
     padding: '0 20px',
-    color: 'blue',
     marginTop: '10vh'
   };
 

@@ -4,10 +4,7 @@ function Header(){
 
   var header = {
     textAlign: 'center',
-    backgroundImage: 'url(`../.././assets/images/background.jpg`)',
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed',
-    backgroundPosition: 'center',
+    backgroundImage: 'linear-gradient(to bottom,#282828,#484848,#282828)',
     position: 'fixed',
     top: '0',
     height: '10vh',
@@ -18,7 +15,7 @@ function Header(){
   return (
     <div>
       <div style={header}>
-        <h1>Your To-Do List</h1>
+        <h1>Tap Room</h1>
       </div>
     </div>
   );

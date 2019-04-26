@@ -33,7 +33,7 @@ class Feed extends React.Component {
       backgroundRepeat: 'no-repeat',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center'
-    }
+    };
     return (
       <div>
         <div style={background}>
