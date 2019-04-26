@@ -1,8 +1,5 @@
 import React from 'react';
 import ToDoList from './ToDoList';
-import Header from './Header';
-import Edit from './Edit';
-import NewTask from './NewTask';
 import { Route } from 'react-router-dom';
 
 class App extends React.Component {
@@ -11,24 +8,31 @@ class App extends React.Component {
     this.state = {
       masterTaskList: []
     };
+    this.handleAddingNewTaskToMasterTaskList = this.handleAddingNewTaskToMasterTaskList.bind(this);
   }
+
+  handleAddingNewTaskToMasterTaskList(newTask){
+  console.log('function triggered', newTask);
+  var newMasterTaskList = this.state.masterTaskList.slice();
+  newMasterTaskList.push(newTask);
+  this.setState({masterTaskList: newMasterTaskList});
+}
+
+render(){
+
   var editAdd = {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around"
   }
-  return (
-    <div>
+
+    return (
       <div>
-        <Header/>
-        <Route exact path='/' component={TaskList} />
-        <div style={editAdd}>
-          <Edit/>
-          <NewTask/>
-        </div>
+        <NewTask onNewTaskCreation={this.handleAddingNewTaskToMasterTaskList} />
+        <ToDoList toDoList={this.state.masterTaskList} />
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;

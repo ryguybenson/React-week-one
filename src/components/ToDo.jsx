@@ -18,28 +18,7 @@ function ToDo(props){
   }
   return (
     <div>
-      <h3 style={blueText}>{props.tasks}</h3>
-      <form style={form}>
-        <div className="form-check">
-          <label>
-            <input
-              type="radio"
-              name="react-tips"
-              value="option1"
-              checked={true}
-              className="form-check-input"
-            />
-            Check When Completed
-          </label>
-        </div>
-
-        <div className="form-group">
-          <button className="btn btn-primary mt-2" type="submit">
-            Edit
-          </button>
-        </div>
-
-      </form>
+      <p>{props.task}</p>
       <hr style={hr}></hr>
     </div>
   );
