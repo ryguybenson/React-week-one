@@ -9,7 +9,8 @@ function ItemList(props) {
   var itemListStyles = {
     padding: '0 20px',
     marginTop: '10vh',
-    color: 'white'
+    color: 'white',
+    float: 'left'
   };
 
   return (
