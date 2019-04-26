@@ -13,13 +13,16 @@ function Header(){
     flexDirection: 'row',
     justifyContent: 'space-around'
   };
+  var selected = {
+    textDecoration: 'underline'
+  }
   return (
     <div style={header}>
       <div>
         <h1>Tap Room</h1>
       </div>
       <div style={bottomHeader}>
-        <h3>Menu</h3>
+        <h3 style={selected}>Menu</h3>
         <h3>Events</h3>
         <h3>About</h3>
         <h3>contacts</h3>
