@@ -12,23 +12,14 @@ function App() {
     backgroundImage: `url(${background})`,
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed',
-    backgroundPosition: 'center'
+    backgroundPosition: 'center',
   };
   return (
     <div style={container}>
       <Header/>
-      <Feed/>
-      <p> sdfjhlldskskl
-      dfgdfsgfd
-
-      fd
-      dfgdfsgfdfdg
-      dfg
-      fd
-      d</p>
-      <h3>hfdklsjghkdfghdfkghsdhfkdhfg</h3>
-      <h1>dfhdhgdhsdf dfgdfsgfdfdgfg
-       dfgdfsgfd dfgh</h1>
+      <div>
+        <Feed/>
+      </div>
     </div>
   );
 }
