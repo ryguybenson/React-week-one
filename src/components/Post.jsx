@@ -39,7 +39,6 @@ function Post(props) {
   const formStyle = {
     height: '30px',
     width: '100%',
-    border: '2px solid #00b3f2',
     backgroundColor: '#fff'
 
   };

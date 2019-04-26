@@ -21,9 +21,8 @@ function Item(props) {
   };
   return (
     <div style={itemStyles}>
-      <img style={picStyle} src='https://source.unsplash.com/random/75x75' alt="pic"/>
       <div style={contentStyle}>
-        <p>{props.text}</p>
+        <p>- {props.text}</p>
       </div>
     </div>
   );
