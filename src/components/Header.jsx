@@ -3,8 +3,8 @@ import React from 'react';
 function Header(){
 
   var header = {
-    textAlign: "center"
-  }
+    textAlign: 'center'
+  };
   
   return (
     <div>
