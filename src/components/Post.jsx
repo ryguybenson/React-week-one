@@ -17,32 +17,25 @@ function Post(props) {
   }
 
   const postStyle = {
-    backgroundColor: '#a6d8f1',
+    backgroundImage: 'linear-gradient(to bottom,#282828,#484848,#282828)',
     display: 'flex',
     flexFlow: 'row nowrap',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     alignItems: 'center',
     height: '60px',
     width: '100%'
   };
-  const profStyle = {
-    backgroundColor: '#740504',
-    width: '30px',
-    height: '30px',
-    margin: '0 10px'
-  };
 
   const formWidth = {
-    width: '75%'
+    width: '75%',
+    display: 'flex',
+    alignItems: 'center'
   };
 
   const formStyle = {
     height: '30px',
     width: '100%',
     backgroundColor: '#fff',
-    display: 'flex',
-    alignItems: 'center'
-
   };
   const inputStyle = {
     paddingLeft: '20px',
@@ -57,15 +50,13 @@ function Post(props) {
 
   return (
     <div style={postStyle}>
-      <div style={profStyle}></div>
-
-      <form style={formWidth}>
+      <form onSubmit={handleNewPost} style={formWidth}>
         <div style={formStyle}>
           <input style={inputStyle} placeholder='Add Task' type='text'
             ref={(input) => {_post = input;}}/>
         </div>
+        <button style={buttonStyle} type='submit'>ADD</button>
       </form>
-      <button style={buttonStyle} onClick={handleNewPost}>ADD</button>
     </div>
   );
 }

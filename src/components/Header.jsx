@@ -3,9 +3,15 @@ import React from 'react';
 function Header(){
 
   var header = {
-    textAlign: 'center'
+    textAlign: 'center',
+    backgroundImage: 'linear-gradient(to bottom,#282828,#484848,#282828)',
+    position: 'fixed',
+    top: '0',
+    height: '10vh',
+    width: '100vw',
+    color: '#f0f0f0'
   };
-  
+
   return (
     <div>
       <div style={header}>

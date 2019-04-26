@@ -26,7 +26,8 @@ class Feed extends React.Component {
     var footer = {
       position: 'fixed',
       bottom: '3vh',
-      width: '100vw'
+      width: '100vw',
+      backgroundImage: 'linear-gradient(to bottom,#282828,#484848,#282828)'
     }
     return (
       <div>

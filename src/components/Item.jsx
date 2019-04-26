@@ -12,8 +12,9 @@ function Item(props) {
   const contentStyle = {
     marginTop: '0px',
     color: '#606060',
-    fontSize: '.9rem'
+    fontSize: '1rem'
   };
+
 
   return (
     <div style={itemStyles}>
