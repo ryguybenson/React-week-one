@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 function Item(props) {
   const itemStyles = {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     padding: '10px 5px 0px 5px',
     alignItems: 'flex-start'
   };
@@ -14,6 +14,7 @@ function Item(props) {
     color: '#606060',
     fontSize: '.9rem'
   };
+
   return (
     <div style={itemStyles}>
       <div style={contentStyle}>

@@ -39,19 +39,19 @@ function Post(props) {
   const formStyle = {
     height: '30px',
     width: '100%',
-    backgroundColor: '#fff'
+    backgroundColor: '#fff',
+    display: 'flex',
+    alignItems: 'center'
 
   };
   const inputStyle = {
-    border: '0',
     paddingLeft: '20px',
     backgroundColor: '#fff',
-    height: 'calc(100% - 2px)',
+    height: '100%',
     width: 'calc(100% - 22px)',
   };
 
   const buttonStyle ={
-    textTransform: 'uppercase',
     marginLeft: '10px'
   };
 
@@ -61,11 +61,11 @@ function Post(props) {
 
       <form style={formWidth}>
         <div style={formStyle}>
-          <input style={inputStyle}placeholder='Add Task' type='text'
+          <input style={inputStyle} placeholder='Add Task' type='text'
             ref={(input) => {_post = input;}}/>
         </div>
       </form>
-      <button style={buttonStyle} onClick={handleNewPost}>Add</button>
+      <button style={buttonStyle} onClick={handleNewPost}>ADD</button>
     </div>
   );
 }
