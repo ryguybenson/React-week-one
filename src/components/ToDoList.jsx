@@ -1,20 +1,6 @@
 import React from 'react';
 import ToDo from './ToDo';
 
-var masterToDoList = [
-  {
-    tasks: 'Take out the garbage',
-  },
-  {
-    tasks: 'Mow the lawn',
-  },
-  {
-    tasks: 'Run 2 miles',
-  },
-  {
-    tasks: 'Go grocery shopping',
-  }
-];
 
 function ToDoList(){
   return (
