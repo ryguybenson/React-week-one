@@ -11,7 +11,9 @@ function Item(props) {
   };
   const contentStyle = {
     marginTop: '0px',
-    color: '#606060',
+    backgroundColor: 'silver',
+    width: '45vw',
+    color: 'white',
     fontSize: '1rem'
   };
 

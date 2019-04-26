@@ -8,6 +8,7 @@ function App() {
     margin: '-8px',
     width: '100vw',
     height: '100vh',
+    backgroundColor: 'silver',
     backgroundImage: `url(${background})`,
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed',
