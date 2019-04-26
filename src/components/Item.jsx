@@ -9,11 +9,6 @@ function Item(props) {
     padding: '10px 5px 0px 5px',
     alignItems: 'flex-start'
   };
-  const picStyle = {
-    width: '40px',
-    height: '40px',
-    marginRight: '20px'
-  };
   const contentStyle = {
     marginTop: '0px',
     color: '#606060',

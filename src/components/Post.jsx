@@ -61,11 +61,11 @@ function Post(props) {
 
       <form style={formWidth}>
         <div style={formStyle}>
-          <input style={inputStyle}placeholder='What&apos;s happening?' type='text'
+          <input style={inputStyle}placeholder='Add Task' type='text'
             ref={(input) => {_post = input;}}/>
         </div>
       </form>
-      <button style={buttonStyle} onClick={handleNewPost}>Post</button>
+      <button style={buttonStyle} onClick={handleNewPost}>Add</button>
     </div>
   );
 }

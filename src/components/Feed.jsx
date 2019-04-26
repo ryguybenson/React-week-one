@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ItemList from './ItemList';
 import Post from './Post';
 
@@ -23,16 +23,21 @@ class Feed extends React.Component {
 
 
   render(){
-    var feedStyles = {
-      border: '2px solid #ccc'
-    };
+    var footer = {
+      position: 'fixed',
+      bottom: '3vh',
+      width: '100vw'
+    }
     return (
-      <div style={feedStyles}>
-        <Post  onNewPostCreation={this.handleAddingNewPostsToFeed} />
-        <ItemList itemList={this.state.masterFeed} />
+      <div>
+        <div>
+          <ItemList itemList={this.state.masterFeed} />
+        </div>
+        <div style={footer}>
+          <Post  onNewPostCreation={this.handleAddingNewPostsToFeed} />
+        </div>
       </div>
     );
-
   }
 }
 
