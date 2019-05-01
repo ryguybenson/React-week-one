@@ -13,11 +13,11 @@ _This application is bar website that allows users to see available beverages, a
 ![Alt text](./src/assets/images/tree.jpeg "Tree")
 
 ## Features
-* _COMPLETE_
+* _<strong>COMPLETE</strong>_
 * _Users can input name/brand, price, and alcohol content of beverages_
 * _Users can add beverages to the menu_
 
-* _INCOMPLETE_
+* _<strong>INCOMPLETE</strong>_
 * _Users can remove beverages from the menu_
 * _Implement admin page_
 
