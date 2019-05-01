@@ -12,21 +12,28 @@ function Item(props) {
   const contentStyle = {
     marginTop: '0px',
     backgroundColor: 'silver',
+    color: 'black',
     width: '45vw',
-    color: 'white',
-    fontSize: '1rem'
+    maxWidth: '400px',
+    border: '2px solid red',
+    borderRadius: '10px'
   };
 
   return (
     <div style={itemStyles}>
       <div style={contentStyle}>
-        <p>- {props.text}</p>
+        <h3>{props.name}</h3>
+        <p>{props.content}</p>
+        <h3>{props.price}</h3>
       </div>
     </div>
   );
 }
 Item.propTypes = {
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  ticketId: PropTypes.string
 };
 
 export default Item;

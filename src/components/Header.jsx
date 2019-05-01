@@ -11,7 +11,9 @@ function Header(){
   var bottomHeader = {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    maxWidth: '1100px',
+    margin: 'auto'
   };
   var selected = {
     textDecoration: 'underline'

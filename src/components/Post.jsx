@@ -4,12 +4,16 @@ import { v4 } from 'uuid';
 
 
 function Post(props) {
-  let _post =null;
+  let _name =null;
+  let _price =null;
+  let _content =null;
 
   function handleNewPost(event) {
     event.preventDefault();
-    props.onNewPostCreation({post: _post.value, id: v4()});
-    _post.value = '';
+    props.onNewPostCreation({name: _name.value, price: _price.value, content: _content.value, id: v4()});
+    _name.value = '';
+    _price.value = '';
+    _content.value = '';
     console.log(props.onNewPostCreation);
   }
 
@@ -49,9 +53,17 @@ function Post(props) {
     <div style={postStyle}>
       <form onSubmit={handleNewPost} style={formWidth}>
         <div style={formStyle}>
-          <input style={inputStyle} placeholder='Add Task' type='text'
-            ref={(input) => {_post = input;}}/>
-        </div>
+          <input style={inputStyle} placeholder='Name/Brand' type='text'
+            ref={(input) => {_name = input;}}/>
+        </div> <br/>
+        <div style={formStyle}>
+          <input style={inputStyle} placeholder='Price' type='text'
+            ref={(input) => {_price = input;}}/>
+        </div> <br/>
+        <div style={formStyle}>
+          <input style={inputStyle} placeholder='Alcohol Content' type='text'
+            ref={(input) => {_content = input;}}/>
+        </div> <br/>
         <button style={buttonStyle} type='submit'>ADD</button>
       </form>
     </div>

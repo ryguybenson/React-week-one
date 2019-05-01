@@ -8,7 +8,7 @@ function App() {
     margin: '-8px',
     width: '100vw',
     height: '100vh',
-    backgroundColor: 'silver',
+    backgroundColor: 'black',
     backgroundImage: `url(${background})`,
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed',
@@ -25,14 +25,3 @@ function App() {
 }
 
 export default App;
-mWRmkhEDSFJkkyzz4XQsBV44BChwGkrDfMyjVD0eA2aFV3wdfsg
-// DEBUG: dfFmQrSA8YenEcgUFh
-fg
-df
-df
-fd
-fd
-function* (dfFmQrSA8YenEcgUFhfgd
-) {
-
-}

@@ -1,12 +1,25 @@
-# _React To-Do_
+# _React Tap Room_
 
-####  _This application is a to-do list built with angular_
+####  _This application is bar website that allows users to see available beverages, add and remove them from the list, and add or subtract the amount remaining._
 
 #### By _**Riley Benson**_
 
 ## Description
 
-_This application is a to-do list built using angular._
+_This application is bar website that allows users to see available beverages, add and remove them from the list, and add or subtract the amount remaining._
+
+## Component Sketch
+
+![Alt text](./src/assets/images/tree.jpeg "Tree")
+
+## Features
+* _COMPLETE_
+* _Users can input name/brand, price, and alcohol content of beverages_
+* _Users can add beverages to the menu_
+
+* _INCOMPLETE_
+* _Users can remove beverages from the menu_
+* _Implement admin page_
 
 ## Setup/Installation Requirements
 
@@ -17,11 +30,11 @@ _This application is a to-do list built using angular._
 
 ## Differences between React and Angular
 
-_Overall, I like React much more than Angular. The components are much simpler to keep track of and the importing seems easier to me, althought that is probably just because I have a basic understanding now. However, I did like how Angular had its own styles page for each component. It's hard for me to keep track of all the CSS in React and it takes me way to long to implement it which I found slightly annoying. So far I'm liking React much more than Angular though._
+_Overall, I like React much more than Angular. The components are much simpler to keep track of and the importing seems easier to me, although that is probably just because I have a basic understanding now. However, I did like how Angular had its own styles page for each component. It's hard for me to keep track of all the CSS in React and it takes me way to long to implement it which I found slightly annoying. So far I'm liking React much more than Angular though._
 
 ## Known Bugs
 
-_The application won't compile._
+_There are no known bugs._
 
 ## Support and contact details
 
