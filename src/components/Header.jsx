@@ -17,7 +17,7 @@ function Header(){
   };
   var selected = {
     textDecoration: 'underline'
-  }
+  };
   return (
     <div style={header}>
       <div>

@@ -19,7 +19,7 @@ function ItemList(props) {
     borderRadius: '10px',
     backgroundColor: 'silver',
     color: 'black'
-  }
+  };
   var menu = {
     display: 'flex',
     justifyContent: 'space-around',
@@ -27,26 +27,33 @@ function ItemList(props) {
     flexWrap: 'wrap',
     maxWidth: '900px',
     margin: 'auto'
-  }
+  };
 
 
   return (
     <div style={itemListStyles}>
       <h2 style={available}>Available Drinks</h2>
       <div style={menu}>
-          {props.itemList.map((item, index) =>
-            <Item name={item.name}
-              price={item.price}
-              content={item.content}
-              key={item.id}/>
-          )}
+        {Object.keys(props.itemList).map(function(itemId) {
+          let item = props.itemList[itemId];
+          return <Item name={item.name}
+            price={item.price}
+            content={item.content}
+            key={itemId}
+            itemId={itemId}
+            onItemSelection={props.onItemSelection}
+            onDelete={props.onDelete}/>;
+        })}
       </div>
     </div>
   );
 }
 
 ItemList.propTypes = {
-  itemList: PropTypes.array
+  itemList: PropTypes.object,
+  onItemSelection: PropTypes.func,
+  onDelete: PropTypes.func,
+  selectedItem: PropTypes.string
 };
 
 export default ItemList;

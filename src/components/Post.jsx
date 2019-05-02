@@ -24,18 +24,21 @@ function Post(props) {
     justifyContent: 'center',
     alignItems: 'center',
     height: '60px',
-    width: '100%'
+    width: '100vw',
+    margin: 'auto'
   };
 
   const formWidth = {
     width: '75%',
     display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
     alignItems: 'center'
   };
 
   const formStyle = {
     height: '30px',
-    width: '100%',
+    width: '30%',
     backgroundColor: '#fff',
   };
   const inputStyle = {
@@ -55,15 +58,15 @@ function Post(props) {
         <div style={formStyle}>
           <input style={inputStyle} placeholder='Name/Brand' type='text'
             ref={(input) => {_name = input;}}/>
-        </div> <br/>
-        <div style={formStyle}>
-          <input style={inputStyle} placeholder='Price' type='text'
-            ref={(input) => {_price = input;}}/>
-        </div> <br/>
+        </div>
         <div style={formStyle}>
           <input style={inputStyle} placeholder='Alcohol Content' type='text'
             ref={(input) => {_content = input;}}/>
-        </div> <br/>
+        </div>
+        <div style={formStyle}>
+          <input style={inputStyle} placeholder='Price' type='text'
+            ref={(input) => {_price = input;}}/>
+        </div>
         <button style={buttonStyle} type='submit'>ADD</button>
       </form>
     </div>

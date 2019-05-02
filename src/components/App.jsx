@@ -5,7 +5,6 @@ import background from '../assets/images/background.jpg';
 
 function App() {
   var container = {
-    margin: '-8px',
     width: '100vw',
     height: '100vh',
     backgroundColor: 'black',

@@ -19,21 +19,33 @@ function Item(props) {
     borderRadius: '10px'
   };
 
-  return (
+  const itemInformation =
     <div style={itemStyles}>
       <div style={contentStyle}>
         <h3>{props.name}</h3>
         <p>{props.content}</p>
         <h3>{props.price}</h3>
+        <p>{props.id}</p>
+      </div>
+    </div>;
+    console.log(props)
+  return (
+    <div>
+    {itemInformation}
+      <div onClick={props.onDelete}>
+        <button>remove</button>
       </div>
     </div>
   );
 }
 Item.propTypes = {
-  text: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
-  ticketId: PropTypes.string
+  itemId: PropTypes.string,
+  onItemSelection: PropTypes.func,
+  onDelete: PropTypes.func,
+  selectedItem: PropTypes.string
 };
 
 export default Item;
